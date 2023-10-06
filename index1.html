@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>temp2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+	 .bark {
+            width: 100%;
+            border-collapse: collapse;
+            border-top: 5px solid purple;
+        }
+
+        td {
+            padding: 10px;
+            text-align: right;
+        }
+
+        input {
+            padding: 10px;
+            width: 115%;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #e6f0ff;
+        }
+
+        form {
+            width: 40%;
+            border: 2px solid purple;
+            border-top-width: 5px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+	table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+        }
+
+        .student-button {
+            background-color: purple;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .educator-button {
+            background-color: white;
+            color: purple;
+            border: 1px solid purple;
+        }
+	i { 
+            padding: 12px;
+            width: 25%;
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            box-sizing: 10px;
+            font-size: 16px;
+            background-color: white;
+            pointer-events: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+        }
+	
+
+    </style>
+</head>
+<body>
+
+<form>
+<div align="center"><h2>SIGN UP FOR FREE</h2></div>
+<div  align="right">
+	
+    <button class="student-button">Student</button>
+    <button class="educator-button">Educator</button>
+</div>
+<div class="bark">
+<p>Are you an  <b>Educator</b> ?</p>	
+</div>
+    <table >
+        <tr>
+            <td><b>Name:</b></td>
+            <td><input type="text" id="user" placeholder="Enter name"></td>
+            <td><i class="fa fa-user"></i></td>
+        </tr>
+        <tr>
+            <td><b>Email:</b></td>
+            <td><input type="email" name="" id="mail" value="" placeholder="Enter email"></td>
+            <td><i class="fa fa-envelope"></i></td>
+        </tr>
+        <tr>
+            <td><b>Re-type email:</b></td>
+            <td><input type="email" name="" id="remail" value="" placeholder="Re-enter email"></td>
+            <td><i class="fa fa-envelope"></i></td>
+        </tr>
+        <tr>
+            <td><b>Password:</b></td>
+            <td><input type="password" id="pass" placeholder="Enter password" name="password" minlength="8" required></td>
+            <td><i class="fa fa-eye"></i></td>
+        </tr>
+    </table>
+	<div>
+	<p>By signing up, you are indicating that you have read and agree to the  <font color="purple">Terms & Conditions</font> and <font color="purple">Privacy Policy</font></p>
+	</div>
+    <br>
+    <div align="center" class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_API_KEY"></div>
+    <br>
+	
+    <div align="center">
+        <button type="submit">Sign up for free</button>
+    </div>
+</form>
+</body>
+</html>
+
+
